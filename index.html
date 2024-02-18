@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taj Hotel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+
+        <nav>
+
+            <div class="navbar">
+                <img src="./Images/logo-Taj.png" alt="">
+                <a href="#">OUR HOTELS</a>
+                <a href="#">DINING</a>
+                <a href="#">WEDDINGS</a>
+                <a href="#">GIFT CARDS</a>
+                <a href="#">TAJ HOLIDAYS</a>
+                <div class="dropdown">
+                    <a href="#">MEMBERSHIP PROGRAMS<span class="down">&nbsp;<img src="./Images/up-arrow.png" alt=""
+                                width="15" height="15"></span></a>
+                    <div class="content">
+                        <a href="#">THE CHAMBERS</a>
+                        <a href="#">NEUPASS</a>
+                        <a href="#">EPICURE</a>
+                        <a href="#">BUSINESS CONTACT</a>
+                    </div>
+                </div>
+                <a href="#">MANAGE BOOKING</a>
+            </div>
+
+        </nav>
+
+    </header>
+
+    <main>
+        <div class="main_image">
+            <img src="./Images/TajHotel.jpeg" alt="">
+        </div>
+        <section>
+            <h2>OFFERS & PROMOTIONS</h2>
+            <div class="offers_promos">
+                <div class="list">
+                    <ul>
+                        <li><span class="list_style">🞇</span><button onclick="change_to_romantic()">Romantic
+                                Gateaways</button></li>
+                        <li><span class="list_style">🞇</span><button onclick="change_to_limited()">Limited Period
+                                Escapes</button></li>
+                        <li><span class="list_style">🞇</span><button onclick="change_to_Urban()">Urban
+                                Getaways</button>
+                        </li>
+                        <li><span class="list_style">🞇</span><button onclick="change_to_Member()">Member Exclusive
+                                Offer</button></li>
+                        <li><span class="list_style">🞇</span><button
+                                onclick="change_to_Carecations()">Carecations</button></li>
+                        <li><span class="list_style">🞇</span><button onclick="change_to_Suite()">Suite
+                                Surprises</button></li>
+                    </ul>
+                </div>
+                <div class="about_offers">
+                    <h3 class="title">Romantic Getaways</h3>
+                    <p id="para">Join us in celebrating the season of love with our special stay package for NeuPass
+                        members. </p>
+                    <div class="validity">VALID TILL 31<sup>st</sup> MAR 2025</div>
+                    <button>VIEW DETAILS</button>
+                </div>
+                <div class="images">
+                    <img src="./Images/biwi.jpeg" alt="">
+                </div>
+            </div>
+
+        </section>
+        <section>
+            <h2>POPULAR DESTINATIONS</h2>
+            <div class="popular_dest_flex">
+                <div class="popular_dest_grid">
+                    <img src="./Images/Mumbai.jpeg" alt="">
+                    <div>Mumbai</div>
+                    <button>VIEW DETAILS</button>
+                </div>
+                <div class="popular_dest_grid">
+                    <img src="./Images/Goa.jpeg" alt="">
+                    <div>Goa</div>
+                    <button>VIEW DETAILS</button>
+                </div>
+                <div class="popular_dest_grid">
+                    <img src="./Images/New Delhi.jpeg" alt="">
+                    <div>New Delhi</div>
+                    <button>VIEW DETAILS</button>
+                </div>
+                <div class="popular_dest_grid">
+                    <img src="./Images/Jaipur.jpeg" alt="">
+                    <div>Jaipur</div>
+                    <button>VIEW DETAILS</button>
+                </div>
+            </div>
+        </section>
+
+        <section>
+
+            <h2>HAPPENINGS</h2>
+
+            <div class="happenings_flex_container">
+
+                <div class="happenings_grid_container">
+                    <i class="fa-solid fa-clock" style="text-align: right; color: #d29751"></i>
+                    <p style="text-align: left">Now Open</p>
+                    <img src="./Images/Taj_Sawai.jpeg" alt="Taj_Sawai">
+                    <div>
+                        <div style="font-size: 1.5rem">Taj Sawai, Ranthambore</div>
+                        <div class="place_name">Ranthambore</div>
+                    </div>
+                    <button>VIEW DETAILS</button>
+                </div>
+
+                <div class="happenings_grid_container">
+                    <i class="fa-solid fa-clock" style="text-align: right; color: #d29751"></i>
+                    <p style="text-align: left">Now Open</p>
+                    <img src="./Images/Taj_Taal_Kutir.jpeg" alt="Taj_Sawai">
+                    <div>
+                        <div style="font-size: 1.5rem">Taj Taal Kutir, Kolkata</div>
+                        <div class="place_name">Kolkata</div>
+                    </div>
+                    <button>VIEW DETAILS</button>
+                </div>
+            </div>
+
+            <div class="stand_alone_anchor"><a href="#">SHOW MORE</a></div>
+
+        </section>
+        <section>
+            <h2 class="explore_taj_h2">EXPLORE TAJ</h2>
+            <div class="explore_taj">
+                <p>Descend into a world that was once the sole preserve of royalty, step onto the soft, white sand
+                    beaches
+                    at a secluded island or discover the hidden secrets of mist-draped hills with Taj</p>
+            </div>
+            <div class="explore_taj_grid_container">
+                <img src="./Images/Beach_Retreats.png" alt="">
+                <div>
+                    <h3>BEACH RETREATS</h3>
+                    <p>Wake up to the sound of waves lapping lazily at the shore. Uncover serenity and marvel at the
+                        wealth
+                        of beauty within the glittering blue seas. Give in to the siren song of the sun, sand and surf
+                        with
+                        Beach Retreats.</p>
+                    <div class="view_details">
+                        <a href="#">VIEW DETAILS</a>
+                        <span>→</span>
+                    </div>
+                </div>
+
+                <img src="./Images/Hill_Stations.png" alt="">
+                <div>
+                    <h3>HILL STATIONS</h3>
+                    <p>Wake up to the sound of waves lapping lazily at the shore. Uncover serenity and marvel at the
+                        wealth of beauty within the glittering blue seas. Give in to the siren song of the sun, sand and
+                        surf with Beach Retreats.</p>
+                    <div class="view_details">
+                        <a href="#">VIEW DETAILS</a>
+                        <span>→</span>
+                    </div>
+                </div>
+
+                <div>
+                    <h3>ROYAL INDIA</h3>
+                    <p>Wander through the storied halls of a fairy tale palace, where dreams come to life. Retreat into
+                        your majestic suite, inspired by elegance.</p>
+                    <div class="view_details">
+                        <a href="#">VIEW DETAILS</a>
+                        <span>→</span>
+                    </div>
+                </div>
+                <img src="./Images/Royal_India.png" alt="">
+
+                <div>
+                    <h3>URBAN GETAWAYS</h3>
+                    <p>There is magic to be found in the energy of a bustling city. Where vibrant markets offer you
+                        everything you could imagine and centuries of history hide in the most unassuming places.
+                        Discover the world’s most spectacular urban hubs.</p>
+                    <div class="view_details">
+                        <a href="#">VIEW DETAILS</a>
+                        <span>→</span>
+                    </div>
+                </div>
+                <img src="./Images/Urban_Getways.jpeg" alt="">
+            </div>
+
+            <div class="stand_alone_anchor explore_taj"><a href="#">SHOW MORE</a></div>
+
+            <h2>OUR ANCILLARY SERVICES</h2>
+            <div class="ancillary_services">
+                <div class="ancillary_services_grid_container">
+                    <img src="./Images/Timeless_Weddings.png" alt="" class="timeless_weddings">
+                    <a href="#" class="text1">TIMELESS WEDDINGS</a>
+                    <img src="./Images/J Wellness Circle.png" alt="" class="jwellness">
+                    <a href="#" class="text2">J WELLNESS CIRCLE</a>
+                    <img src="./Images/Lifestyle Membership.jpeg" alt="" class="lifetime_membership">
+                    <a href="#" class="text3">LIFESTYLE MEMBERSHIP</a>
+                    <img src="./Images/Meetings and events.jpg" alt="" class="meetings_events">
+                    <a href="#" class="text4">MEETINGS AND EVENTS</a>
+                    <img src="./Images/Taj Experience Gift Cards.jpeg" alt="" class="Taj_experience_giftCards">
+                    <a href="#" class="text5">TAJ EXPERIENCE GIFT CARDS</a>
+                    <img src="./Images/Dining.jpeg" alt="" class="Dining">
+                    <a href="#" class="text6">DINING</a>
+                </div>
+            </div>
+
+            <h2>OUR BRANDS</h2>
+            <div class="ourbrands">
+                <div class="ourbrands_flex_container">
+
+                    <div class="taj_box flex_item">
+                        <img class="main_image taj" src="./Images/Taj.png" alt="">
+                        <img class="logo taj_logo" src="./Images/logo-Taj.png" alt="">
+                        <div class="hovered_flex_container">
+                            <img class="logo hovered" src="./Images/logo-Taj.png" alt="">
+                            <p>The unrivalled guardian of grandeur, Taj conjures a panoply of superlatives. With an art
+                                of
+                                hospitality that has been perfected over a century, Taj delivers unmatched experiences
+                                and
+                                lasting memories for guests around the world.</p>
+                            <button>KNOW MORE</button>
+                        </div>
+                    </div>
+
+                    <div class="seleqtions_box flex_item">
+                        <img class="main_image SELEQTIONS" src="./Images/SELEQTIONS.jpeg" alt="">
+                        <img class="logo SELEQTIONS_logo" src="./Images/seleqtions-brand-home-logo.PNG" alt="">
+                        <div class="hovered_flex_container">
+                            <img class="logo hovered" src="./Images/seleqtions-brand-home-logo.PNG" alt="">
+                            <p>Celebrating a legacy of time, a sense of place or a specific theme, SeleQtions offers a
+                                range of marquee hotels that each boast of distinct and special experiences.</p>
+                            <button>KNOW MORE</button>
+                        </div>
+                    </div>
+
+                    <div class="VIVANTA_box flex_item">
+                        <img class="main_image VIVANTA" src="./Images/VIVANTA.jpeg" alt="">
+                        <img class="logo VIVANTA_logo" src="./Images/icon-vivanta.png" alt="">
+                        <div class="hovered_flex_container">
+                            <img class="logo hovered" src="./Images/icon-vivanta.png" alt="">
+                            <p>A distinctive collection of vibrant hotels that are handpicked for the young,
+                                contemporary achievers of today who stand apart without being rebels, and that allow
+                                them to discover joie de vivre.</p>
+                            <button>KNOW MORE</button>
+                        </div>
+                    </div>
+
+                    <div class="GINGER_box flex_item">
+                        <img class="main_image GINGER" src="./Images/GINGER.jpeg" alt="">
+                        <img class="logo GINGER_logo" src="./Images/gingerLogo.png" alt="">
+                        <div class="hovered_flex_container">
+                            <img class="logo hovered" src="./Images/gingerLogo.png" alt="">
+                            <p>Deeply contemporary in spirit, Ginger caters to those for whom the lines between work and
+                                play are blurred and those who need a hotel as seamless, flexible and open minded as
+                                they are.</p>
+                            <button>KNOW MORE</button>
+                        </div>
+                    </div>
+
+                    <div class="ama_box flex_item">
+                        <img class="main_image ama" src="./Images/ama.jpeg" alt="">
+                        <img class="logo ama_logo" src="./Images/ama-logo-transparent.png" alt="">
+                        <div class="hovered_flex_container">
+                            <img class="logo hovered" src="./Images/ama-logo-transparent.png" alt="">
+                            <p>Elegant and charming escapes set in breathtaking locales that combine homely comfort and
+                                warm service to deliver a truly immersive and authentic local experience for their
+                                guests.</p>
+                            <button>KNOW MORE</button>
+                        </div>
+                    </div>
+
+                    <div class="qmin_box flex_item">
+                        <img class="main_image qmin" src="./Images/qmin.PNG" alt="">
+                        <img class="logo qmin_logo" src="./Images/Original-logo-qmin.png" alt="">
+                        <div class="hovered_flex_container">
+                            <img class="logo hovered" src="./Images/Original-logo-qmin.png" alt="">
+                            <p>Qmin brings Qurated dishes from our iconic restaurants, made with the highest Quality of
+                                ingredients, from a wide variety of Quisines to the doorstep of our guests.</p>
+                            <button>KNOW MORE</button>
+                        </div>
+                    </div>
+
+                    <div class="taj_sats flex_item">
+                        <img class="main_image Taj_sats" src="./Images/Taj_sats.jpeg" alt="">
+                        <img class="logo Taj_sats" src="./Images/logo-Taj.png" alt="">
+                        <div class="hovered_flex_container">
+                            <img class="logo hovered" src="./Images/logo-Taj.png" alt="">
+                            <p>Elevating air catering with creative twists and elegant accents, TajSATS enriches travel
+                                with delicious and nourishing meals, creating hospitality that never compromises on
+                                quality.</p>
+                            <button>KNOW MORE</button>
+                        </div>
+                    </div>
+                </div>
+                <button class="nextBtn" onclick="scroll_right()">NEXT →</button>
+                <button class="BeforeBtn" onclick="scroll_left()">← PREV</button>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <div class="footer_component">
+            <div class="container">
+                <h5>Destinations <span>+</span></h5>
+                <hr class="custom-rule">
+                <div class="flex_container">
+                    <div class="link_column first">
+                        <a href="#">Airline & Frequent Flyer Partners</a>
+                        <a href="#">Taj Magazine</a>
+                        <a href="#">J Wellness Circle</a>
+                        <a href="#">Site Map</a>
+                        <a href="#">Terms Of Use</a>
+                        <a href="#">Contact Us</a>
+                    </div>
+                    <div class="link_column second">
+                        <a href="#">Accessibility</a>
+                        <a href="#">Languages</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Press Room</a>
+                        <a href="#">Careers</a>
+                        <a href="#">Blogs</a>
+                    </div>
+                    <div class="link_column third">
+                        <a href="#">SAATHI</a>
+                        <a href="#">NIDHI</a>
+                        <a href="#">UTSAV</a>
+                        <a href="#">INCREDIBLE INDIA FILM</a>
+                    </div>
+                    <div class="link_column fourth">
+                        <div class="newsletter" href="#">Join our newsletter</div>
+                        <button>SUBSCRIBE</button>
+                        <div class="newsletter">Connect with us:</div>
+                        <div class="logo">
+                            <img src="./Images/ic-facebook@2x.png" alt="">
+                            <img src="./Images/ic-instagram@2x.png" alt="" style="padding: 0 5px;">
+                            <img src="./Images/twitter-logo-x.png" alt="" style="padding: 0 5px;">
+                            <img src="./Images/ic-youtube.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <h5>Loyalty Programs <span>+</span></h5>
+                <hr class="custom-rule">
+            </div>
+
+            <div class="container loyalty_Programs">
+                <div>
+                    <img src="./Images/ihcl-logo.svg" alt="">
+                    <p>&copy;2022 The Indian Hotels Company Limited. All Rights Reserved.</p>
+                </div>
+                <div class="loyalty_programs_grid_container">
+                    <div style="display: inline;" class="newsletter">Our Brands:</div>
+                    <div class="our_brands_logos">
+                        <img src="./Images/taj_logo.png" alt="" class="taj">
+                        <img src="./Images/seleqtions-brand-home-logo.PNG" alt="" class="seleqtions">
+                        <img src="./Images/icon-vivanta.png" alt="" class="VIVANTA">
+                        <img src="./Images/gingerLogo.png" alt="" class="GINGER">
+                        <img src="./Images/ama-logo-transparent.png" alt="" class="ama">
+                        <img src="./Images/Original-logo-qmin.png" alt="" class="qmin">
+                    </div>
+                </div>
+            </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>

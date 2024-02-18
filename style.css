@@ -1,0 +1,740 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    color: hsl(0, 0%, 35%);
+    text-align: center;
+    padding: 45px 15px;
+    font-size: 2.5rem;
+    font-weight: bold;
+
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #1f1235;
+    font-size: 1rem;
+}
+
+.navbar ul {
+    list-style: none;
+}
+
+.navbar>img {
+    width: 4rem;
+}
+
+.content {
+    position: absolute;
+    display: none;
+    /* background-color: rgb(196, 196, 196); */
+    background-color: white;
+    padding: 10px 15px;
+}
+
+.content>a {
+    display: block;
+    padding: 10px 15px;
+}
+
+
+.dropdown:hover .content {
+    display: block;
+}
+
+.main_image>img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+
+.offers_promos {
+    padding: 20px 0;
+    display: flex;
+    font-family: Calibri;
+    display: flex;
+}
+
+.offers_promos .list {
+    background-color: #fafafa;
+    /* background: tomato; */
+    width: 379.833px;
+    height: 560px;
+}
+
+.offers_promos ul {
+    list-style: none;
+}
+
+.list_style {
+    color: white;
+    padding-left: 50px;
+    padding-right: 10px;
+    font-size: 18px;
+}
+
+.list li:hover .list_style {
+    color: #c88f4b;
+}
+
+.down {
+    vertical-align: middle;
+}
+
+
+
+
+
+.offers_promos ul button {
+    padding: 20px 0;
+    /* padding-left: 60px; */
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    background: none;
+    font-weight: 400;
+    color: gray;
+}
+
+.offers_promos ul button:hover {
+    color: black;
+}
+
+.offers_promos .about_promos {
+    width: 370.417px;
+    height: 560px;
+}
+
+.images {
+    width: 785.75px;
+    height: 600px;
+}
+
+.images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about_offers p {
+    text-align: left;
+    padding-right: 70px;
+    padding-bottom: 20px;
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+.about_offers {
+    width: 370.417px;
+    background-color: #efeeee;
+    font-family: inherit;
+    padding-left: 22px;
+    padding-top: 140px;
+}
+
+.list {
+    padding-top: 40px;
+}
+
+.about_offers .title {
+    font-size: 2rem;
+    padding-bottom: 25px;
+}
+
+.about_offers .validity {
+    color: #c88f4b;
+    font-weight: bold;
+    padding-bottom: 40px;
+}
+
+.about_offers button {
+    background-color: rgb(200, 143, 80);
+    border-style: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: wheat;
+}
+
+
+
+
+
+.popular_destinations {
+    display: flex;
+    gap: 10px;
+    flex-basis: 40px;
+    /* justify-content: space-between; */
+}
+
+.rectangle_box {
+    display: grid;
+    grid-template-columns: 2;
+}
+
+.rectangle_box>img {
+    grid-column-start: span 2;
+}
+
+/* explore taj  para*/
+P {
+    text-align: center;
+}
+
+
+
+/* popular destination */
+
+.popular_dest_flex {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.popular_dest_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 154px);
+    grid-template-rows: 400px 4rem;
+    justify-items: center;
+    align-items: center;
+    /* width: 370px; */
+    box-shadow: 1px 1px 10px gray;
+
+}
+
+.happenings_flex_container img,
+.popular_dest_flex img {
+    grid-column-start: span 2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.popular_dest_grid>div {
+    justify-self: flex-start;
+    padding-left: 25px;
+    font-size: 1.2rem;
+}
+
+.popular_dest_grid button {
+    background-color: #d29751;
+    border-radius: 5px;
+    border-style: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    color: white;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.happenings_flex_container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.happenings_grid_container {
+    display: grid;
+    /* grid-template-columns: repeat(2, 308px); */
+    grid-template-columns: 293px 323px;
+    box-shadow: 1px 1px 10px gray;
+}
+
+.happenings_grid_container .place_name {
+    grid-row-start: 4;
+    font-size: 1rem;
+    color: hsl(0, 0%, 50%);
+    padding-top: 10px;
+}
+
+.happenings_grid_container button {
+    grid-row-start: span 2;
+    align-self: center;
+    justify-self: center;
+    background-color: #d29751;
+    border-radius: 5px;
+    border-style: none;
+    padding: 10px 15px;
+    color: white;
+    font-family: monospace;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.happenings_grid_container>div {
+    padding: 20px 15px;
+}
+
+.happenings_grid_container>p,
+.fa-solid {
+    padding-bottom: 15px;
+    padding-top: 30px;
+    font-size: 1.2rem;
+}
+
+.fa-solid {
+    padding-right: 10px;
+}
+
+.stand_alone_anchor>a {
+    text-decoration: none;
+    color: #d29751;
+    font-weight: bolder;
+}
+
+.stand_alone_anchor {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.explore_taj {
+    display: flex;
+    justify-content: center;
+}
+
+.explore_taj_h2 {
+    padding-bottom: 25px;
+}
+
+.explore_taj>p {
+    flex-basis: 990px;
+    line-height: 1.8;
+    font-size: 1.2rem;
+    color: #686868;
+    font-weight: bold;
+}
+
+.explore_taj_grid_container {
+    display: grid;
+    grid-template-columns: repeat(4, 374px);
+    grid-template-rows: repeat(2, 288px);
+    padding-left: 20px;
+    padding-top: 35px;
+}
+
+.explore_taj_grid_container div {
+    background-color: #f5f5f5;
+}
+
+.explore_taj_grid_container img {
+    width: 100%;
+    height: 100%;
+}
+
+.explore_taj_grid_container h3 {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 40px;
+}
+
+.explore_taj_grid_container p {
+    text-align: left;
+    margin-bottom: 30px;
+    margin-left: 40px;
+    margin-right: 20px;
+}
+
+.explore_taj_grid_container a {
+    text-decoration: none;
+    color: #d29751;
+}
+
+.explore_taj_grid_container a:hover {
+    text-decoration: underline;
+}
+
+
+.explore_taj_grid_container span {
+    font-size: 1.4rem;
+    color: hsl(33, 49%, 52%);
+    font-weight: bold;
+    padding-left: 5px;
+}
+
+.explore_taj_grid_container .view_details {
+    margin-left: 40px;
+    height: 1.3rem;
+}
+
+.stand_alone_anchor.stand_alone_anchor {
+    padding-top: 10px;
+}
+
+/* OUR AncILLARY SERVICES */
+
+.ancillary_services_grid_container {
+    display: grid;
+    grid-template-columns: 367.317px 505.383px 367.3px;
+    grid-template-rows: repeat(3, 200px);
+    gap: 20px;
+    padding-left: 140px;
+    padding-right: 140px;
+}
+
+.ancillary_services_grid_container img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+.timeless_weddings {
+    grid-row-start: 1;
+    grid-row-end: span 2;
+    grid-column-start: 1;
+    grid-column-end: span 2;
+}
+
+.ancillary_services_grid_container a {
+
+    align-self: flex-end;
+    text-align: left;
+    padding-left: 22px;
+    padding-bottom: 12px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-shadow: black 2px 2px;
+}
+
+.ancillary_services_grid_container .text1 {
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+
+.ancillary_services_grid_container .jwellness,
+.text2 {
+    grid-column-start: 3;
+    grid-row-start: 1;
+}
+
+.ancillary_services_grid_container .lifetime_membership,
+.text3 {
+    grid-row-start: 2;
+    grid-column-start: 3;
+}
+
+.ancillary_services_grid_container .meetings_events,
+.text4 {
+    grid-row-start: 3;
+    grid-column-start: 1;
+}
+
+.ancillary_services_grid_container .Taj_experience_giftCards,
+.text5 {
+    grid-row-start: 3;
+    grid-column-start: 2;
+}
+
+.ancillary_services_grid_container .Dining,
+.text6 {
+    grid-row-start: 3;
+    grid-column-start: 3;
+}
+
+/* OUR BRANDS */
+
+.ourbrands_flex_container {
+    display: flex;
+    padding-bottom: 15px;
+    overflow-x: auto;
+}
+
+.ourbrands_flex_container .main_image {
+    width: 100%;
+    height: 100%;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    object-fit: cover;
+    filter: brightness(40%);
+}
+
+.ourbrands_flex_container .logo {
+    filter: brightness(0) invert(1);
+    height: 70px;
+    width: auto;
+    padding-top: 20px;
+    justify-self: center;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+.ourbrands_flex_container .flex_item {
+    /* flex-basis: 369.7px;
+    height: 500px; */
+    /* width: 369.7px; */
+    display: grid;
+    grid-template-columns: 369.7px;
+    grid-template-rows: 200px 300px;
+    flex-shrink: 0;
+
+}
+
+.flex_item:hover>.main_image {
+    grid-row-end: 2;
+}
+
+.flex_item:hover>.logo {
+    display: none;
+}
+
+.logo.hovered {
+    filter: brightness(1);
+}
+
+.flex_item:hover>.hovered_flex_container {
+    display: flex;
+}
+
+.hovered_flex_container {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hovered_flex_container>button {
+    background-color: white;
+    border: 1px solid #d29751;
+    border-radius: 5px;
+    padding: 10px 30px;
+    cursor: pointer;
+    color: #d29751;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.hovered_flex_container>p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 1.2;
+    color: #686868;
+}
+
+.VIVANTA_box .logo {
+    width: 219.817px;
+    /* height: 31.35px; */
+    height: auto;
+    padding-top: 45px;
+}
+
+.GINGER_box .logo {
+    width: 219.817px;
+    height: auto;
+    padding-left: 70px;
+}
+
+.ourbrands {
+    position: relative;
+}
+
+.nextBtn {
+    position: absolute;
+    right: 40px;
+    top: 110px;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 50px 10px;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    border-style: none;
+}
+
+.BeforeBtn {
+    position: absolute;
+    left: 40px;
+    top: 110px;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 50px 10px;
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    border-style: none;
+}
+
+.footer_component {
+    margin-top: 80px;
+    height: 497.585px;
+    background-color: #efeeee;
+    font-size: 1.2rem;
+    letter-spacing: 0.8px;
+    font-family: Calibri;
+}
+
+.footer_component .container {
+    padding-left: 130px;
+    padding-right: 130px;
+    padding-top: 20px;
+}
+
+.footer_component .container span {
+    color: hsl(33, 49%, 52%);
+    font-size: 2rem;
+    font-weight: bold;
+    padding-left: 5px;
+    cursor: default;
+    vertical-align: middle;
+    padding-bottom: 5px;
+}
+
+.footer_component .container h5 {
+    padding-bottom: 5px;
+}
+
+.custom-rule {
+    border: none;
+    /* Remove default border */
+    border-top: 1px solid gray;
+    /* Add 1px solid red border on top to create the horizontal rule */
+    margin: 10px 0;
+    /* Add margin for spacing */
+}
+
+.link_column a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding-top: 15px;
+}
+
+.link_column a:hover {
+    text-decoration: underline;
+}
+
+.footer_component .container .flex_container {
+    display: flex;
+    gap: 60px;
+}
+
+.footer_component .container .flex_container .link_column.third {
+    padding-left: 120px;
+}
+
+.footer_component .container .flex_container .link_column.fourth {
+    padding-left: 40px;
+}
+
+.footer_component .container .flex_container .link_column.fourth .newsletter {
+    font-size: 1rem;
+    color: black;
+    padding-top: 15px;
+}
+
+.link_column.fourth button {
+    background-color: #d29751;
+    border-radius: 5px;
+    border-style: none;
+    padding: 10px 50px;
+    cursor: pointer;
+    color: white;
+    font-family: monospace;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.link_column.fourth .logo {
+    padding-top: 10px;
+}
+
+.link_column.fourth .logo img {
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+
+.loyalty_Programs {
+    display: flex;
+    gap: 350px;
+}
+
+.loyalty_Programs img {
+    width: 91px;
+    height: 31.45px;
+    /* padding-top: 15px; */
+}
+
+.loyalty_Programs p {
+    text-align: left;
+    color: gray;
+    font-size: 0.75rem;
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+
+.loyalty_Programs .newsletter {
+    font-size: 1rem;
+    color: black;
+    /* padding-top: 15px; */
+}
+
+.our_brands_logos {
+    /* display: grid; */
+    /* grid-template-columns: repeat(6, 90px); */
+    padding-top: 10px;
+    /* gap: 15px; */
+}
+
+.our_brands_logos .taj {
+    object-fit: contain;
+    width: 40.8px;
+    height: 30.2px;
+}
+
+.our_brands_logos .seleqtions {
+    object-fit: cover;
+    width: 109.583px;
+    height: 30.2px;
+}
+
+.our_brands_logos .VIVANTA {
+    object-fit: cover;
+    width: 75.2px;
+    height: 11.2px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+}
+
+.our_brands_logos .GINGER {
+    object-fit: cover;
+    width: 90px;
+    height: 20.2px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+}
+
+.our_brands_logos .ama {
+    object-fit: cover;
+    width: 51px;
+    height: 30.2px;
+}
+
+.our_brands_logos .qmin {
+    object-fit: cover;
+    width: 51px;
+    height: 30.2px;
+    padding-left: 20px;
+    padding-top: 5px;
+}
+
+.our_brands_logos img {
+    cursor: pointer;
+}
